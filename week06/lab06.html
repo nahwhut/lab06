@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Demonstrates HTML5 basic content elements with CSS layout, updated for accessibility and web ethics" />
+  <meta name="keywords" content="HTML5, CSS layout, accessibility" />
+  <meta name="author" content="A Lecturer" />
+  <title>CSS Layout – Accessible Version (Lab 06)</title>
+  <link href="styles/lab04.css" rel="stylesheet" />
+  <link href="styles/layout.css" rel="stylesheet" />
+  <link href="styles/dl.css" rel="stylesheet" />
+  <link href="styles/accessibility.css" rel="stylesheet" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>HTML 5 Basic Content Elements with CSS Layout</h1>
+  </header>
+
+  <nav aria-label="Page sections">
+    <ul>
+      <li class="menu"><a href="#headings">Headings and Paragraphs</a></li>
+      <li class="menu"><a href="#sc">Special Characters</a></li>
+      <li class="menu"><a href="#lists">Lists</a></li>
+      <li class="menu"><a href="#tables">Tables</a></li>
+      <li class="menu"><a href="#hyperlinks">Hyperlinks</a></li>
+      <li class="menu"><a href="#images">Images</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <article>
+      <h2>HTML5 Basic Elements</h2>
+      <aside>
+        <p>An HTML page without CSS styling looks a bit boring!</p>
+        <p>We will give this aside a border, margin, padding and background graphic with CSS.</p>
+        <p>We will also float it to the right and set its width <span aria-hidden="true">&#9786;</span></p>
+      </aside>
+
+      <section id="headings">
+        <h2>Headings and Paragraphs</h2>
+        <p>Headings and paragraphs are block elements.</p>
+        <h3>Headings</h3>
+        <p>There are 6 levels of heading. Headings mark the logical structure of a page. Do not skip levels. If you want to change the size of a heading, don't change its level – change the CSS.</p>
+        <h3>Paragraphs</h3>
+        <p>Paragraphs contain the body text of a web page. You cannot put another block element inside a paragraph.</p>
+      </section>
+
+      <section id="sc">
+        <h2>Special Characters</h2>
+        <p>While HTML supports many named special characters like <span class="special">&#174; (#174)</span>, XML only supports 5, namely: <span class="special">&quot; &apos; &amp; &lt;</span> and <span class="special">&gt;</span>. So to keep your HTML compliant you need to use numbers for all the others.</p>
+      </section>
+
+      <section id="lists">
+        <h2>Lists</h2>
+        <p>There are three types of lists: unordered lists, ordered lists and definition lists.</p>
+        <h3>Unordered List</h3>
+        <ul>
+          <li>First bullet point</li>
+          <li>Second bullet point</li>
+          <li>Third bullet point</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ol>
+        <h3>Definition List</h3>
+        <dl>
+          <dt>First term (or name)</dt>
+          <dd>First description (or definition, or value)</dd>
+          <dt>Second term (or name)</dt>
+          <dd>Second description (or definition, or value)</dd>
+        </dl>
+        <h3>Nested List</h3>
+        <p>Lists can also be nested inside each other.</p>
+        <ol>
+          <li>First item</li>
+          <li>Second item
+            <ul>
+              <li>First sub-item</li>
+              <li>Second sub-item</li>
+              <li>Third sub-item</li>
+            </ul>
+          </li>
+          <li>Third item</li>
+        </ol>
+      </section>
+
+      <section id="tables">
+        <h2>Tables</h2>
+        <table>
+          <caption>Table of Monthly Savings (in Australian dollars)</caption>
+          <thead>
+            <tr>
+              <th rowspan="2" scope="col">Month</th>
+              <th colspan="3" scope="colgroup">Savings</th>
+            </tr>
+            <tr>
+              <th scope="col">Salary</th>
+              <th scope="col">Interest</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">January</th>
+              <td>$60</td>
+              <td>$40</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <th scope="row">February</th>
+              <td>$40</td>
+              <td>$40</td>
+              <td>$80</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="3" scope="row">Grand Total</th>
+              <td>$180</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="hyperlinks">
+        <h2>Hyperlinks</h2>
+        <p><a href="https://ilearn.swin.edu.au">Go to Blackboard (external site)</a></p>
+        <p>This is a link to the <a href="#lists">Lists section</a> of this page.</p>
+        <p>This link uses the mailto protocol instead of http: <a href="mailto:someone@swin.edu.au">email someone@swin.edu.au</a></p>
+      </section>
+
+      <section id="images">
+        <h2>Images</h2>
+        <figure>
+          <a href="images/mycat.jpg">
+            <img src="images/mycat_small.jpg" alt="Orange and white kitten sitting on a stone in the grass – opens the full-size photo" width="160" height="120" />
+          </a>
+          <figcaption>Thumbnail of a kitten. Select it to open the larger version (JPEG, 1600 × 1200, 222&nbsp;KB). Image supplied with the COS10011 lab files.</figcaption>
+        </figure>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>COS10011/COS60004/COS60007 CWA</p>
+    <p>&#169; Swinburne University of Technology</p>
+    <p>Lab06 – Accessible version of Lab05 Task 1</p>
+    <p>Privacy: this page uses no cookies, tracking or analytics and collects no personal information.</p>
+  </footer>
+</body>
+</html>

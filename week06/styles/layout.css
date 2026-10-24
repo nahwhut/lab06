@@ -1,0 +1,111 @@
+/*
+  filename: layout.css
+  author:   Phung Ngoc Anh Thu
+  created:  17/10/2026
+  last modified: 24/10/2026
+  description: Layout rules for lab05.html and lab06.html
+*/
+
+.menu {
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+aside {
+  border: 1px solid #999;
+  margin: 1em;
+  padding: 1em;
+  background: url("images/fade.jpg") repeat-x;
+  width: 30%;
+  float: right;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+header {
+  border: 1px solid darkgray;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: lightgray;
+  text-align: center;
+}
+
+footer {
+  border-top: 4px double navy;
+  clear: both;
+}
+
+#lists {
+  float: left;
+}
+
+#tables {
+  float: right;
+}
+
+table {
+  margin: auto;
+}
+
+#hyperlinks {
+  clear: both;
+  float: left;
+}
+
+#images {
+  float: right;
+}
+
+figure {
+  border: 2px solid #ccc;
+  margin: 1em;
+  padding: 1em;
+}
+
+figcaption {
+  margin-top: 0.5em;
+  line-height: 1.4;
+}
+
+#lists, #tables, #hyperlinks, #images {
+  text-align: center;
+  width: 50%;
+}
+
+ol, ul, dl {
+  text-align: left;
+}
+
+article {
+  min-width: 30em;
+}
+
+footer p {
+  display: inline-block;
+  width: 33%;
+}
+
+footer p:first-child {
+  float: left;
+}
+
+footer p:nth-child(2) {
+  text-align: center;
+}
+
+footer p:nth-child(3) {
+  float: right;
+  text-align: right;
+}
+
+footer p:last-child {
+  display: block;
+  width: auto;
+  clear: both;
+  margin-top: 0;
+  padding-top: 0.5em;
+  font-size: 0.9em;
+  text-align: center;
+}

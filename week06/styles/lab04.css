@@ -1,0 +1,31 @@
+/*
+
+filename: lab04.css
+
+author: Phung Ngoc Anh Thu
+
+created: 10/10/2026
+
+last modified: 24/10/2026
+
+description: Styles for lab05.html and lab06.html
+
+*/
+*{font-family: calibri,sans-serif;color: #2F4F4F;}
+h1{color:purple; font-size:2em; font-weight:bold;}
+h2{color:rgb(0,128,128);font-size:1.5em; font-weight:bold;}
+aside, footer{font-style:italic;}
+h1,h2,h3{font-family: Arial, sans-serif}
+table, th, td {border: 1px solid black;}
+#images{text-align:center;}
+#heading-subs{color:red; font-size:1.2em; font-weight:bold;}
+.special{color: #A64B00; font-weight:bold;}
+.month{text-align:right;}
+nav a {
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 2px solid #ccc;
+}
+ol,ul {list-style-type: square;}
+ol {list-style-type: decimal;}
+nav a:hover{background-color: lightblue; border-color:darkblue;}
